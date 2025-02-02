@@ -1,0 +1,33 @@
+import { useDispatch, useSelector } from "react-redux";
+import { setFilter } from "../store";
+import { DateRangePicker } from "@heroui/date-picker";
+import { useCallback } from "react";
+
+const DateRangeFilter = () => {
+  const dispatch = useDispatch();
+  const { filter } = useSelector((state) => state.sustainability);
+
+  const handleDateChange = useCallback(
+    (dates) => {
+      const [start, end] = dates;
+      dispatch(setFilter({ startDate: start, endDate: end }));
+    },
+    [dispatch]
+  );
+
+  return (
+    <div className="flex flex-col md:flex-row gap-4 my-4">
+      <div>
+        <label className="block mb-1">Date Range</label>
+        <DateRangePicker
+          selected={[filter.startDate, filter.endDate]}
+          onChange={handleDateChange}
+          className="border p-2 rounded"
+          placeholderText="Select date range"
+        />
+      </div>
+    </div>
+  );
+};
+
+export default DateRangeFilter;
