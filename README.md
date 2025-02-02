@@ -1,53 +1,28 @@
-# Next.js & HeroUI Template
+# Sustainability Dashboard
 
-This is a template for creating applications using Next.js 14 (app directory) and HeroUI (v2).
+## Overview
+This interactive dashboard tracks environmental data (daily carbon emissions, energy savings, and air quality indices) and provides real-time insights using Next.js 15, Redux, HeroUI, and Chart.js.
 
-[Try it on CodeSandbox](https://githubbox.com/heroui-inc/heroui/next-app-template)
+## Features
+- **Data Display**: Interactive line charts to visualize key metrics.
+- **Filtering**: Date range selector to filter displayed data.
+- **Dark Mode**: Toggle for dark/light mode.
+- **Responsive Design**: Optimized for desktop and mobile devices.
 
-## Technologies Used
+## Technology Choices
+- **Next.js 15**: Provides a modern React-based framework with enhanced features.
+- **Redux (Redux Toolkit)**: For predictable state management.
+- **HeroUI**: For styled UI components.
+- **Chart.js**: For interactive data visualization.
+- **React-Datepicker**: For intuitive date selection.
 
-- [Next.js 14](https://nextjs.org/docs/getting-started)
-- [HeroUI v2](https://heroui.com/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [Tailwind Variants](https://tailwind-variants.org)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
-- [next-themes](https://github.com/pacocoursey/next-themes)
+## Setup & Running
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Run `npm run dev` to start the development server.
+4. Visit [http://localhost:3000](http://localhost:3000) in your browser.
 
-## How to Use
-
-### Use the template with create-next-app
-
-To create a new project based on this template using `create-next-app`, run the following command:
-
-```bash
-npx create-next-app -e https://github.com/heroui-inc/next-app-template
-```
-
-### Install dependencies
-
-You can use one of them `npm`, `yarn`, `pnpm`, `bun`, Example using `npm`:
-
-```bash
-npm install
-```
-
-### Run the development server
-
-```bash
-npm run dev
-```
-
-### Setup pnpm (optional)
-
-If you are using `pnpm`, you need to add the following code to your `.npmrc` file:
-
-```bash
-public-hoist-pattern[]=*@heroui/*
-```
-
-After modifying the `.npmrc` file, you need to run `pnpm install` again to ensure that the dependencies are installed correctly.
-
-## License
-
-Licensed under the [MIT license](https://github.com/heroui-inc/next-app-template/blob/main/LICENSE).
+## Assumptions
+- The mock data simulates an API call.
+- The filtering is performed in the frontend.
+- HeroUI is assumed to be installed via npm and provides basic UI components.
