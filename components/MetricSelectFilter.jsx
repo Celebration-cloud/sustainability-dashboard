@@ -32,10 +32,10 @@ const MetricSelectFilter = () => {
 
   /**
    * Handle metric selection changes
-   * @param {React.ChangeEvent<HTMLSelectElement>} value - The select event
+   * @param {React.ChangeEvent<HTMLSelectElement>} event - The select event
    */
-  const handleMetricChange = (value) => {
-    const metricKey = value.target.value;
+  const handleMetricChange = (event) => {
+    const metricKey = event.target.value;
     // Find full metric object from predefined list
     const selected = metrics.find((metric) => metric.key === metricKey);
 
@@ -45,27 +45,19 @@ const MetricSelectFilter = () => {
 
   return (
     <div className="my-4">
-      {/**
-       * HeroUI Select component with accessibility features
-       * - Uses label prop for ARIA compliance
-       * - Explicit id for DOM referencing
-       * - Controlled component using Redux state
-       */}
       <Select
         className="max-w-xs"
         id="metricSelect"
         label="Select Metric"
-        value={selectedMetric.key} // Use key for value comparison
+        aria-label="Select Metric" // Ensures accessibility
+        value={selectedMetric?.key || ""} // Ensure value is properly managed
         onChange={handleMetricChange}
       >
-        {/**
-         * Dynamically generate select options from metrics config
-         * Using index-free array map for clean component creation
-         */}
         {metrics.map((metric) => (
           <SelectItem
             key={metric.key} // Unique key for React reconciliation
             value={metric.key} // Store technical key as value
+            textValue={metric.label} // Ensure accessibility for screen readers
           >
             {metric.label} {/* User-friendly display text */}
           </SelectItem>

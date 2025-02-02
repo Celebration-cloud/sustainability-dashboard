@@ -1,0 +1,122 @@
+[
+  {
+    "date": "2025-02-01",
+    "carbonEmissions": 120,
+    "energySavings": 50,
+    "airQuality": 80
+  },
+  {
+    "date": "2025-02-02",
+    "carbonEmissions": 110,
+    "energySavings": 60,
+    "airQuality": 85
+  },
+  {
+    "date": "2025-02-03",
+    "carbonEmissions": 130,
+    "energySavings": 55,
+    "airQuality": 78
+  },
+  {
+    "date": "2025-02-04",
+    "carbonEmissions": 140,
+    "energySavings": 53,
+    "airQuality": 76
+  },
+  {
+    "date": "2025-02-05",
+    "carbonEmissions": 115,
+    "energySavings": 61,
+    "airQuality": 82
+  },
+  {
+    "date": "2025-02-06",
+    "carbonEmissions": 125,
+    "energySavings": 57,
+    "airQuality": 79
+  },
+  {
+    "date": "2025-02-07",
+    "carbonEmissions": 135,
+    "energySavings": 64,
+    "airQuality": 75
+  },
+  {
+    "date": "2025-02-08",
+    "carbonEmissions": 145,
+    "energySavings": 52,
+    "airQuality": 74
+  },
+  {
+    "date": "2025-02-09",
+    "carbonEmissions": 155,
+    "energySavings": 49,
+    "airQuality": 70
+  },
+  {
+    "date": "2025-02-10",
+    "carbonEmissions": 160,
+    "energySavings": 48,
+    "airQuality": 73
+  },
+  {
+    "date": "2025-02-11",
+    "carbonEmissions": 120,
+    "energySavings": 55,
+    "airQuality": 80
+  },
+  {
+    "date": "2025-02-12",
+    "carbonEmissions": 110,
+    "energySavings": 60,
+    "airQuality": 84
+  },
+  {
+    "date": "2025-02-13",
+    "carbonEmissions": 130,
+    "energySavings": 56,
+    "airQuality": 77
+  },
+  {
+    "date": "2025-02-14",
+    "carbonEmissions": 138,
+    "energySavings": 59,
+    "airQuality": 75
+  },
+  {
+    "date": "2025-02-15",
+    "carbonEmissions": 142,
+    "energySavings": 51,
+    "airQuality": 78
+  },
+  {
+    "date": "2025-02-16",
+    "carbonEmissions": 145,
+    "energySavings": 65,
+    "airQuality": 80
+  },
+  {
+    "date": "2025-02-17",
+    "carbonEmissions": 150,
+    "energySavings": 67,
+    "airQuality": 81
+  },
+  {
+    "date": "2025-02-18",
+    "carbonEmissions": 165,
+    "energySavings": 49,
+    "airQuality": 74
+  },
+  {
+    "date": "2025-02-19",
+    "carbonEmissions": 155,
+    "energySavings": 60,
+    "airQuality": 83
+  },
+  {
+    "date": "2025-02-20",
+    "carbonEmissions": 140,
+    "energySavings": 62,
+    "airQuality": 77
+  }
+]
