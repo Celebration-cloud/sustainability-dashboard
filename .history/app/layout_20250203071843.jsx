@@ -1,13 +1,13 @@
 import "@/styles/globals.css"; // Import global styles
 import { Link } from "@heroui/link"; // Import Link component for external navigation
 import clsx from "clsx"; // Utility for conditional classNames
-import { Analytics } from "@vercel/analytics/next";
 
 import { Providers } from "./providers"; // Theme and context provider wrapper
 
 import { siteConfig } from "@/config/site"; // Site configuration settings
 import { fontSans } from "@/config/fonts"; // Custom font configurations
 import { Navbar } from "@/components/navbar"; // Navigation bar component
+
 /**
  * Metadata Configuration
  * - Sets default title and description for SEO
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
             <Navbar />
             <main className="container mx-auto max-w-7xl px-6 flex-grow">
               {children}
-              <Analytics />
+              
             </main>
             <footer className="w-full flex items-center justify-center py-3">
               <Link
